@@ -7,11 +7,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
-
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
@@ -30,14 +26,11 @@ public class MainActivity extends AppCompatActivity {
         Button startBtn = findViewById(R.id.start_btn);
         Button changeLanguage = findViewById(R.id.changeLang_btn);
 
-        startBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StartButtonActivity.class);
-                startActivity(intent);
+        startBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, StartButtonActivity.class);
+            startActivity(intent);
 
 
-            }
         });
 
         changeLanguage.setOnClickListener(v -> showChangeLanguageDialog());

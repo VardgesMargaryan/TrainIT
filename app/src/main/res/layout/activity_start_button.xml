@@ -18,7 +18,7 @@
         android:textAlignment="center"
         android:fontFamily="@font/holtwood_one_sc"
         android:textColor="@color/prussian_blue"
-        android:textSize="30dp"/>
+        android:textSize="30sp"/>
     <Button
         android:id="@+id/conditional_btn"
         android:layout_width="150dp"
@@ -31,9 +31,9 @@
         android:fontFamily="@font/holtwood_one_sc"
         android:textColor="@color/powder_white"
         android:text="@string/type_1"
-        android:textSize="15dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="200dp"/>
     <Button
         android:id="@+id/cycles_btn"
@@ -47,9 +47,9 @@
         android:fontFamily="@font/holtwood_one_sc"
         android:textColor="@color/powder_white"
         android:text="@string/type_2"
-        android:textSize="15dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="200dp"/>
     <Button
         android:id="@+id/massives_btn"
@@ -63,9 +63,10 @@
         android:fontFamily="@font/holtwood_one_sc"
         android:textColor="@color/powder_white"
         android:text="@string/type_3"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="200dp"/>
     <Button
         android:id="@+id/strings_btn"
@@ -79,10 +80,10 @@
         android:fontFamily="@font/holtwood_one_sc"
         android:textColor="@color/powder_white"
         android:text="@string/type_4"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="10dp"
         android:layout_marginBottom="200dp"/>
 
 
