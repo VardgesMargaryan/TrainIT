@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog mDialog = mBuilder.create();
         mDialog.show();
     }
+    //--
 
     private void setLocale(String language) {
         Locale locale = new Locale(language);
