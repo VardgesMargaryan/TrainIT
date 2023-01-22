@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Train IT!</string>
+    <string name="start_first">ՍԿԻԶԲ</string>
+    <string name="change_lang">ՓՈԽԵԼ ԼԵԶՈՒՆ</string>
+    <string name="choose_tv">ԸՆՏՐԵ ՛Ք ՏԻՊԸ</string>
+    <string name="type_1">ՊԱՅՄԱՆԱՅԻՆ</string>
+    <string name="type_2">ՑԻԿԼԱՅԻՆ</string>
+    <string name="type_3">ԶԱՆԳՎԱԾՆԵՐ</string>
+    <string name="type_4">ՏՈՂԵՐ</string>
+</resources>

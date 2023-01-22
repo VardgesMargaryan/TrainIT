@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Train IT!</string>
+    <string name="start_first">НАЧАЛО</string>
+    <string name="change_lang">СМЕНИТЬ ЯЗЫК</string>
+    <string name="choose_tv">ВЫБЕРИТЕ ТИП!</string>
+    <string name="type_1">УСЛОВНЫЕ</string>
+    <string name="type_2">ЦЫКЛИЧНЫЕ</string>
+    <string name="type_3">МАССИВЫ</string>
+    <string name="type_4">СТРОКИ</string>
+</resources>

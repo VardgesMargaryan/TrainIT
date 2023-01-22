@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Train IT!</string>
+    <string name="start_first">START</string>
+    <string name="change_lang">CHANGE LANGUAGE</string>
+    <string name="choose_tv">CHOOSE THE TYPE!</string>
+    <string name="type_1">CONDITIONAL</string>
+    <string name="type_2">CYCLES</string>
+    <string name="type_3">MASSIVES</string>
+    <string name="type_4">STRINGS</string>
 </resources>
