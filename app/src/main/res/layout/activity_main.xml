@@ -4,65 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/powder_white"
+    android:background="@drawable/colored"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/start_logo"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:layout_margin="25dp"
-        android:background="@drawable/logo" />
 
 
         <TextView
             android:id="@+id/app_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/holtwood_one_sc"
+            android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:fontFamily="@font/holtwood_one_sc"
+            android:gravity="center"
             android:text="@string/app_name"
             android:textAlignment="center"
-            android:textColor="@color/prussian_blue"
+            android:textColor="@color/powder_white"
             android:textSize="50sp" />
-
-
-    <Button
-        android:id="@+id/start_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginRight="80dp"
-        android:background="@drawable/colored"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text="@string/start_first"
-        android:textColor="@color/powder_white" />
-
-    <Button
-        android:id="@+id/changeLang_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/colored"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:textColor="@color/powder_white"
-        android:text="@string/change_lang" />
-
-
-
-
-
-
-
-
-
-
 
 
 </LinearLayout>

@@ -6,78 +6,39 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int SPLASH_SCREEN_TIME_OUT = 2000; // After completion of 2000 ms, the next activity will get started.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        loadLocale();
-        setContentView(R.layout.activity_main);
 
+        // This method is used so that your splash activity can cover the entire screen.
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        setContentView(R.layout.activity_main); // this will bind your MainActivity.class file with activity_main.
 
-
-        Button startBtn = findViewById(R.id.start_btn);
-        Button changeLanguage = findViewById(R.id.changeLang_btn);
-
-        startBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, StartButtonActivity.class);
-            startActivity(intent);
-
-
-        });
-
-        changeLanguage.setOnClickListener(v -> showChangeLanguageDialog());
-    }
-
-    private void showChangeLanguageDialog() {
-        final String[] languages = {"Русский", "English"};
-        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
-        mBuilder.setTitle("Choose Language...");
-        mBuilder.setSingleChoiceItems(languages, -1, (dialog, which) -> {
-            if(which == 0){
-                //Russian
-                setLocale("ru");
-                recreate();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Intent is used to switch from one activity to another.
+                Intent i = new Intent(MainActivity.this, StartButtonActivity.class);
+                startActivity(i); // invoke the SecondActivity.
+                finish(); // the current activity will get finished.
             }
-            else if(which == 1){
-                //English
-                setLocale("en");
-                recreate();
-            }
-
-            dialog.dismiss();
-
-        });
-        AlertDialog mDialog = mBuilder.create();
-        mDialog.show();
+            }, SPLASH_SCREEN_TIME_OUT);
     }
-    //--
-
-    private void setLocale(String language) {
-        Locale locale = new Locale(language);
-        Locale.setDefault(locale);
-        Configuration config = new Configuration();
-        config.locale = locale;
-        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-
-        SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
-        editor.putString("My_Lang", language);
-        editor.apply();
-
-    }
-
-    public void loadLocale(){
-        SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
-        String lang = prefs.getString("My_Lang", "");
-        setLocale(lang);
-    }
-
-
 }
+
+
+
+
