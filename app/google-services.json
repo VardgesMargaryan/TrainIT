@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "311962028788",
+    "project_id": "trainit-2a4e2",
+    "storage_bucket": "trainit-2a4e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311962028788:android:b527e8e7ae0f892023eca1",
+        "android_client_info": {
+          "package_name": "com.example.trainit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311962028788-v2bjups3hukjr9absqq8jc1o0fq4ctma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trainit",
+            "certificate_hash": "d1f1e2a61e96eb07203cc3d00fb907e572bfeb96"
+          }
+        },
+        {
+          "client_id": "311962028788-7nbqq4t54l7fi167all9bbh94gf8elo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNKP3eTgWO92ngInnYNwrzByeO60N1vjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311962028788-7nbqq4t54l7fi167all9bbh94gf8elo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

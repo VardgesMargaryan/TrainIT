@@ -8,4 +8,7 @@
     <string name="type_2">ЦЫКЛИЧНЫЕ</string>
     <string name="type_3">МАССИВЫ</string>
     <string name="type_4">СТРОКИ</string>
+    <string name="create_hello">Приветствую.</string>
+    <string name="create_start">Давайте начнём!</string>
+    <string name="create_account">Создать аккаунт</string>
 </resources>

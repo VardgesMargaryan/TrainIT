@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/drawable/colored.xml" value="0.1675" />
+        <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/drawable/rounded_corners.xml" value="0.2105" />
+        <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/drawable/sign_up_icon.xml" value="0.2105" />
         <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/font/fonts.xml" value="0.25" />
         <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/layout/activity_conditionals.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/layout/activity_create_account.xml" value="0.2164855072463768" />
         <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Vardges/AndroidStudioProjects/TrainIT/app/src/main/res/layout/activity_start_button.xml" value="0.25" />
       </map>

@@ -8,4 +8,7 @@
     <string name="type_2">ՑԻԿԼԱՅԻՆ</string>
     <string name="type_3">ԶԱՆԳՎԱԾՆԵՐ</string>
     <string name="type_4">ՏՈՂԵՐ</string>
+    <string name="create_hello">Բարի Գալուստ։</string>
+    <string name="create_start">Եկ սկսենք:</string>
+    <string name="create_account">Ստեղծել ակաունտ</string>
 </resources>

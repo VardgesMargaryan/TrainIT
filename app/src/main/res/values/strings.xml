@@ -7,4 +7,8 @@
     <string name="type_2">CYCLES</string>
     <string name="type_3">MASSIVES</string>
     <string name="type_4">STRINGS</string>
+    <string name="create_hello">Hello.</string>
+    <string name="create_start">Lets get started!</string>
+    <string name="create_account">Create Account</string>
+
 </resources>

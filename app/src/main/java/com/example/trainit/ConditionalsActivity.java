@@ -8,9 +8,12 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 
 public class ConditionalsActivity extends AppCompatActivity {
     String probJSON;
@@ -21,11 +24,14 @@ public class ConditionalsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conditionals);
         showJson = findViewById(R.id.showjson);
-
-
         Gson gson = new Gson();
-        Problem problem = gson.fromJson(probJSON, Problem.class);
-        Log.i("GSON", "Problem: "+problem.problem +" Answer:"+problem.answer);
+
+
+        Type listType = new TypeToken<ArrayList<Problem>>(){}.getType();
+        ArrayList<Problem> problem = gson.fromJson(probJSON, listType);
+
+
+        
 
 
 

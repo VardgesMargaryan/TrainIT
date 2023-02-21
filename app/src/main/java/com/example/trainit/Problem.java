@@ -8,7 +8,4 @@ public class Problem {
         this.problem = problem;
         this.answer = answer;
     }
-
-    public Problem() {
-    }
 }
