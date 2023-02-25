@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/colored"
+    android:background="@drawable/layouts"
     tools:context=".LoginActivity">
     <ImageView
         android:id="@+id/log_in_icon"
@@ -104,6 +104,7 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/account_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/powder_white"
@@ -117,5 +118,30 @@
             android:text="Sign up"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/google_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/img"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>

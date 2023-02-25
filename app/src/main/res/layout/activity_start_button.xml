@@ -7,6 +7,10 @@
     tools:context=".StartButtonActivity"
     android:background="@color/powder_white"
     >
+    <include layout="@layout/toolbar"/>
+
+
+
     <TextView
         android:id="@+id/choose_tv"
         android:layout_width="match_parent"
