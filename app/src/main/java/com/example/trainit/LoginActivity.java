@@ -51,6 +51,13 @@ public class LoginActivity extends AppCompatActivity {
         createaccountbtntextview.setOnClickListener((v)->startActivity(new Intent(LoginActivity.this,CreateAccountActivity.class)) );
 
 
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+        if(acct!=null){
+            navigateToStartActivity();
+        }
+
+
+
         googleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,18 +83,19 @@ public class LoginActivity extends AppCompatActivity {
 
             try {
                 task.getResult(ApiException.class);
-                navigateToSecondActivity();
+                navigateToStartActivity();
             } catch (ApiException e) {
                 Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
-    void navigateToSecondActivity(){
+    void navigateToStartActivity(){
         finish();
         Intent intent = new Intent(LoginActivity.this,StartButtonActivity.class);
         startActivity(intent);
     }
+
 
     void loginUser(){
         String email  = emailedittext.getText().toString();
@@ -111,9 +119,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 changeInProgress(false);
                 if(task.isSuccessful()){
-                    //login is success
+                    //Login is success
                     if(firebaseAuth.getCurrentUser().isEmailVerified()){
-                        //go to mainactivity
+                        //Go to StartActivity
                         startActivity(new Intent(LoginActivity.this,StartButtonActivity.class));
                         finish();
                     }else{
@@ -121,7 +129,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                 }else{
-                    //login failed
+                    //Login failed
                     Toast.makeText(LoginActivity.this,task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
