@@ -1,7 +1,11 @@
 [
   {
     "problem": "problem",
-    "answer": "answer"
+    "answer1": "answer",
+    "answer2": "answer",
+    "answer3": "answer",
+    "answer4": "answer",
+    "correct": "answer"
   },
 
   {

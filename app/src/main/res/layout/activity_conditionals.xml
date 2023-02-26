@@ -1,19 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/powder_white"
+    android:background="@color/prussian_blue"
     tools:context=".ConditionalsActivity">
 
     <TextView
-        android:id="@+id/showjson"
+        android:id="@+id/type_1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/type_1"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:textColor="@color/tart_orange"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/type_1"
+        android:backgroundTint="@color/powder_white"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners"/>
+
+
+    <Button
+        android:id="@+id/btn_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question"
+        android:background="@drawable/buttons"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btn_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_answer1"
+        android:background="@drawable/buttons"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btn_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_answer2"
+        android:background="@drawable/buttons"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btn_answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_answer3"
+        android:background="@drawable/buttons"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="10dp"/>
 
 
 
 
 
-</LinearLayout>
+
+
+
+</RelativeLayout>
