@@ -24,6 +24,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     EditText emailedittext,passwordedittext;
@@ -54,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if(acct!=null){
             navigateToStartActivity();
-        }
+        }else
 
 
 
@@ -122,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
                     //Login is success
                     if(firebaseAuth.getCurrentUser().isEmailVerified()){
                         //Go to StartActivity
-                        startActivity(new Intent(LoginActivity.this,StartButtonActivity.class));
+                        startActivity(new Intent(LoginActivity.this, StartButtonActivity.class));
                         finish();
                     }else{
                         Toast.makeText(LoginActivity.this,"Email not verified, Please verify your email.", Toast.LENGTH_SHORT).show();

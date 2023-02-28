@@ -22,7 +22,7 @@
 
 
     <TextView
-        android:id="@+id/tv_question"
+        android:id="@+id/tv_problem_con"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_below="@id/type_1"
@@ -33,34 +33,35 @@
 
 
     <Button
-        android:id="@+id/btn_answer1"
+        android:id="@+id/btn_answer1_con"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_question"
+        android:layout_below="@id/tv_problem_con"
         android:background="@drawable/buttons"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="10dp"/>
     <Button
-        android:id="@+id/btn_answer2"
+        android:id="@+id/btn_answer2_con"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_answer1"
+        android:layout_below="@id/btn_answer1_con"
         android:background="@drawable/buttons"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="10dp"/>
     <Button
-        android:id="@+id/btn_answer3"
+        android:id="@+id/btn_answer3_con"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_answer2"
+        android:layout_below="@id/btn_answer2_con"
         android:background="@drawable/buttons"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="10dp"/>
     <Button
-        android:id="@+id/btn_answer4"
+        android:id="@+id/btn_answer4_con"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_answer3"
+        android:text=""
+        android:layout_below="@id/btn_answer3_con"
         android:background="@drawable/buttons"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="10dp"/>

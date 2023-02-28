@@ -30,10 +30,6 @@ public class StartButtonActivity extends AppCompatActivity {
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
 
-        if(acct == null){
-            Intent intent = new Intent(StartButtonActivity.this, LoginActivity.class);
-            startActivity(intent);
-        }
 
 
 
