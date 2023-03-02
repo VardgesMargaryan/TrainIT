@@ -22,8 +22,8 @@ import java.util.List;
 
 public class StringsActivity extends AppCompatActivity {
 
-    TextView tv_problem;
-    Button btn_answer1, btn_answer2, btn_answer3, btn_answer4;
+    TextView textViewProblem;
+    Button btnAnswer1, btnAnswer2, btnAnswer3, btnAnswer4;
 
     List<Problem> problemItems;
     int curProblem = 0;
@@ -38,11 +38,11 @@ public class StringsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_strings);
 
 
-        tv_problem = findViewById(R.id.tv_problem_s);
-        btn_answer1 = findViewById(R.id.btn_answer1_s);
-        btn_answer2 = findViewById(R.id.btn_answer2_s);
-        btn_answer3 = findViewById(R.id.btn_answer3_s);
-        btn_answer4 = findViewById(R.id.btn_answer4_s);
+        textViewProblem = findViewById(R.id.tv_problem_s);
+        btnAnswer1 = findViewById(R.id.btn_answer1_s);
+        btnAnswer2 = findViewById(R.id.btn_answer2_s);
+        btnAnswer3 = findViewById(R.id.btn_answer3_s);
+        btnAnswer4 = findViewById(R.id.btn_answer4_s);
 
         loadAllProblems();
 
@@ -50,7 +50,7 @@ public class StringsActivity extends AppCompatActivity {
 
         setProblemOnScreen(curProblem);
 
-        btn_answer1.setOnClickListener(new View.OnClickListener() {
+        btnAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(problemItems.get(curProblem).getAnswer1()
@@ -76,7 +76,7 @@ public class StringsActivity extends AppCompatActivity {
             }
         });
 
-        btn_answer2.setOnClickListener(new View.OnClickListener() {
+        btnAnswer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(problemItems.get(curProblem).getAnswer2()
@@ -102,7 +102,7 @@ public class StringsActivity extends AppCompatActivity {
             }
         });
 
-        btn_answer3.setOnClickListener(new View.OnClickListener() {
+        btnAnswer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(problemItems.get(curProblem).getAnswer3()
@@ -128,7 +128,7 @@ public class StringsActivity extends AppCompatActivity {
             }
         });
 
-        btn_answer4.setOnClickListener(new View.OnClickListener() {
+        btnAnswer4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(problemItems.get(curProblem).getAnswer4()
@@ -156,11 +156,11 @@ public class StringsActivity extends AppCompatActivity {
     }
 
     private void setProblemOnScreen(int number){
-        tv_problem.setText(problemItems.get(number).getProblem());
-        btn_answer1.setText(problemItems.get(number).getAnswer1());
-        btn_answer2.setText(problemItems.get(number).getAnswer2());
-        btn_answer3.setText(problemItems.get(number).getAnswer3());
-        btn_answer4.setText(problemItems.get(number).getAnswer4());
+        textViewProblem.setText(problemItems.get(number).getProblem());
+        btnAnswer1.setText(problemItems.get(number).getAnswer1());
+        btnAnswer2.setText(problemItems.get(number).getAnswer2());
+        btnAnswer3.setText(problemItems.get(number).getAnswer3());
+        btnAnswer4.setText(problemItems.get(number).getAnswer4());
 
     }
 

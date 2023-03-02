@@ -19,9 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class CreateAccountActivity extends AppCompatActivity {
     EditText emailEditText,passwordEditText,confirmPasswordEditText;
-    Button createaccountbtn;
-    ProgressBar progressbar;
-    TextView loginbtntextview;
+    Button createAccountBtn;
+    ProgressBar progressBar;
+    TextView logInBtnTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +31,12 @@ public class CreateAccountActivity extends AppCompatActivity {
         emailEditText = findViewById(R.id.email_edit_text);
         passwordEditText = findViewById(R.id.password_edit_text);
         confirmPasswordEditText = findViewById(R.id.confirm_password_edit_text);
-        createaccountbtn = findViewById(R.id.create_account_btn);
-        progressbar = findViewById(R.id.progress_bar);
-        loginbtntextview = findViewById(R.id.login_text_view_btn);
+        createAccountBtn = findViewById(R.id.create_account_btn);
+        progressBar = findViewById(R.id.progress_bar);
+        logInBtnTextView = findViewById(R.id.login_text_view_btn);
 
-        createaccountbtn.setOnClickListener(v-> createAccount());
-        loginbtntextview.setOnClickListener(v-> finish());
+        createAccountBtn.setOnClickListener(v-> createAccount());
+        logInBtnTextView.setOnClickListener(v-> finish());
 
 
     }
@@ -85,11 +85,11 @@ public class CreateAccountActivity extends AppCompatActivity {
 
     void changeInProgress(boolean inProgress){
         if(inProgress){
-            progressbar.setVisibility(View.VISIBLE);
-            createaccountbtn.setVisibility(View.GONE);
+            progressBar.setVisibility(View.VISIBLE);
+            createAccountBtn.setVisibility(View.GONE);
         }else{
-            progressbar.setVisibility(View.GONE);
-            createaccountbtn.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+            createAccountBtn.setVisibility(View.VISIBLE);
         }
     }
 

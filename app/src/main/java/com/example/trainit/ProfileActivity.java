@@ -17,7 +17,7 @@ import com.google.android.gms.tasks.Task;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    TextView logout;
+    TextView logOut;
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
 
@@ -26,13 +26,13 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        logout = findViewById(R.id.logout_txt);
+        logOut = findViewById(R.id.logout_txt);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
 
-        logout.setOnClickListener(new View.OnClickListener() {
+        logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signOut();

@@ -27,10 +27,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText emailedittext,passwordedittext;
-    Button loginbtn;
-    ProgressBar progressbar;
-    TextView createaccountbtntextview;
+    EditText emailEditText,passwordEditText;
+    Button logInBtn;
+    ProgressBar progressBar;
+    TextView createAccountBtnTextView;
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
     ImageView googleBtn;
@@ -39,23 +39,23 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        emailedittext = findViewById(R.id.email_edit_text);
-        passwordedittext = findViewById(R.id.password_edit_text);
-        loginbtn = findViewById(R.id.log_in_btn);
-        progressbar = findViewById(R.id.progress_bar);
+        emailEditText = findViewById(R.id.email_edit_text);
+        passwordEditText = findViewById(R.id.password_edit_text);
+        logInBtn = findViewById(R.id.log_in_btn);
+        progressBar = findViewById(R.id.progress_bar);
         googleBtn = findViewById(R.id.google_btn);
-        createaccountbtntextview = findViewById(R.id.create_account_text_view_btn);
+        createAccountBtnTextView = findViewById(R.id.create_account_text_view_btn);
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
-        loginbtn.setOnClickListener((v)-> loginUser() );
-        createaccountbtntextview.setOnClickListener((v)->startActivity(new Intent(LoginActivity.this,CreateAccountActivity.class)) );
+        logInBtn.setOnClickListener((v)-> loginUser() );
+        createAccountBtnTextView.setOnClickListener((v)->startActivity(new Intent(LoginActivity.this,CreateAccountActivity.class)) );
 
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if(acct!=null){
             navigateToStartActivity();
-        }else
+        }
 
 
 
@@ -99,8 +99,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
     void loginUser(){
-        String email  = emailedittext.getText().toString();
-        String password  = passwordedittext.getText().toString();
+        String email  = emailEditText.getText().toString();
+        String password  = passwordEditText.getText().toString();
 
 
         boolean isValidated = validateData(email,password);
@@ -139,11 +139,11 @@ public class LoginActivity extends AppCompatActivity {
 
     void changeInProgress(boolean inProgress){
         if(inProgress){
-            progressbar.setVisibility(View.VISIBLE);
-            loginbtn.setVisibility(View.GONE);
+            progressBar.setVisibility(View.VISIBLE);
+            logInBtn.setVisibility(View.GONE);
         }else{
-            progressbar.setVisibility(View.GONE);
-            loginbtn.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+            logInBtn.setVisibility(View.VISIBLE);
         }
     }
 
@@ -151,11 +151,11 @@ public class LoginActivity extends AppCompatActivity {
         //validate the data that are input by user.
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            emailedittext.setError("Email is invalid");
+            emailEditText.setError("Email is invalid");
             return false;
         }
         if(password.length()<6){
-            passwordedittext.setError("Password length is invalid");
+            passwordEditText.setError("Password length is invalid");
             return false;
         }
         return true;
