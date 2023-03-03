@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/create_hello"
+            android:text="@string/hello"
             android:fontFamily="@font/holtwood_one_sc"
             android:textColor="@color/powder_white"
             android:textSize="20sp"/>
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:hint="Email Address"
+            android:hint="@string/email"
             android:textSize="20sp"
             android:textColor="@color/powder_white"
             android:background="@drawable/rounded_corners"
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/password_edit_text"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="@string/password"
             android:textSize="20sp"
             android:background="@drawable/rounded_corners"
             android:padding="16dp"
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/confirm_password_edit_text"
             android:inputType="textPassword"
-            android:hint="Confirm Password"
+            android:hint="@string/confirm_password"
             android:textSize="20sp"
             android:background="@drawable/rounded_corners"
             android:padding="16dp"
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:id="@+id/create_account_btn"
             android:layout_height="64dp"
-            android:text="Sign up"
+            android:text="@string/sign_up"
             android:backgroundTint="@color/prussian_blue"
             android:background="@drawable/rounded_corners"
             android:textColor="@color/powder_white"
@@ -120,14 +120,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/powder_white"
-            android:text="Already have an account? "/>
+            android:text="@string/create_account_to_login"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/powder_white"
             android:textStyle="bold"
             android:id="@+id/login_text_view_btn"
-            android:text="Log in"/>
+            android:text="@string/login"/>
 
     </LinearLayout>
 

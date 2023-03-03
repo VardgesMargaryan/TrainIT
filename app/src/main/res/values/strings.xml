@@ -1,14 +1,24 @@
 <resources>
     <string name="app_name">Train IT!</string>
-    <string name="start_first">START</string>
-    <string name="change_lang">CHANGE LANGUAGE</string>
-    <string name="choose_tv">CHOOSE THE TYPE!</string>
-    <string name="type_1">CONDITIONAL</string>
-    <string name="type_2">CYCLES</string>
-    <string name="type_3">MASSIVES</string>
-    <string name="type_4">STRINGS</string>
-    <string name="create_hello">Hello.</string>
+    <string name="change_lang">Change Language</string>
+    <string name="choose_tv">Choose the type!</string>
+    <string name="type_1">Conditional</string>
+    <string name="type_2">Cycles</string>
+    <string name="type_3">Massives</string>
+    <string name="type_4">Strings</string>
+    <string name="hello">Hello.</string>
     <string name="create_start">Lets get started!</string>
-    <string name="create_account">Create Account</string>
+    <string name="login_welcome">Welcome back.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">E-mail address</string>
+    <string name="create_account_to_login">Already have an account?</string>
+    <string name="login">Log in</string>
+    <string name="login_to_create_account">Do not have an account?</string>
+    <string name="logout">Log out</string>
+    <string name="about_us">About us</string>
+    <string name="profile">Profile</string>
+    <string name="change_pfp_icon">Change profile picture</string>
 
 </resources>

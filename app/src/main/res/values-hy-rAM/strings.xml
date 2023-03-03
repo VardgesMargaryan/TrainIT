@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Train IT!</string>
-    <string name="start_first">ՍԿԻԶԲ</string>
     <string name="change_lang">ՓՈԽԵԼ ԼԵԶՈՒՆ</string>
     <string name="choose_tv">ԸՆՏՐԵ ՛Ք ՏԻՊԸ</string>
     <string name="type_1">ՊԱՅՄԱՆԱՅԻՆ</string>
     <string name="type_2">ՑԻԿԼԱՅԻՆ</string>
     <string name="type_3">ԶԱՆԳՎԱԾՆԵՐ</string>
     <string name="type_4">ՏՈՂԵՐ</string>
-    <string name="create_hello">Բարի Գալուստ։</string>
+    <string name="hello">Ողջու՜յն։</string>
     <string name="create_start">Եկ սկսենք:</string>
-    <string name="create_account">Ստեղծել ակաունտ</string>
+    <string name="sign_up">Ստեղծել հաշիվ</string>
+    <string name="login_welcome">Բարի գալուստ։</string>
+    <string name="password">Գաղտնաբառ</string>
+    <string name="confirm_password">Հաստատեք գաղտնաբառը</string>
+    <string name="email">Էլ․ հասցե</string>
+    <string name="create_account_to_login">Արդեն ունե՞ք հաշիվ</string>
+    <string name="login">Մուտք</string>
+    <string name="login_to_create_account">Դեռ չունե՞ք հաշիվ</string>
+    <string name="logout">Ելք</string>
+    <string name="about_us">Մեր մասին</string>
+    <string name="profile">Պրոֆիլ</string>
+    <string name="change_pfp_icon">Փոխել նկարը</string>
 </resources>
