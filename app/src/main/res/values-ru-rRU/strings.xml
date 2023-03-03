@@ -21,4 +21,5 @@
     <string name="about_us">О нас</string>
     <string name="profile">Профиль</string>
     <string name="change_pfp_icon">Сменить фотку профиля</string>
+    <string name="save_btn">Сохранить</string>
 </resources>

@@ -17,7 +17,7 @@
         android:fontFamily="@font/holtwood_one_sc"
         android:textColor="@color/tart_orange"
         android:textSize="25sp"/>
-    <com.google.android.material.imageview.ShapeableImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_icon"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -26,22 +26,43 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/profile"/>
 
-    <Button
-        android:id="@+id/change_pfp_btn"
+    <LinearLayout
+        android:id="@+id/change_pfp_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/orange_buttons"
-        android:layout_marginHorizontal="100dp"
-        android:layout_marginVertical="10dp"
-        android:textAllCaps="false"
-        android:text="@string/change_pfp_icon"
-        android:textColor="@color/powder_white"
-        android:layout_below="@id/profile_icon"/>
+        android:orientation="horizontal"
+        android:layout_below="@id/profile_icon">
+
+        <Button
+            android:id="@+id/change_pfp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_buttons"
+            android:layout_marginStart="100dp"
+            android:layout_marginVertical="10dp"
+            android:textAllCaps="false"
+            android:text="@string/change_pfp_icon"
+            android:padding="10dp"
+            android:textColor="@color/powder_white" />
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_buttons"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/save_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/powder_white"/>
+
+    </LinearLayout>
+
+
     <LinearLayout
         android:id="@+id/email_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/change_pfp_btn"
+        android:layout_below="@id/change_pfp_layout"
         android:layout_marginTop="10dp"
         android:background="@drawable/white_background"
         android:layout_marginHorizontal="20dp"

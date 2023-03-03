@@ -20,5 +20,6 @@
     <string name="about_us">About us</string>
     <string name="profile">Profile</string>
     <string name="change_pfp_icon">Change profile picture</string>
+    <string name="save_btn">Save</string>
 
 </resources>
