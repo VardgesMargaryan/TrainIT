@@ -1,37 +1,85 @@
 {
   "conditionals": [
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "PREDICT THE OUTPUT:\n\nint x = 60;\n\nint y = 90;\n\nif (y%x == 0 && y-x==30)\n\n{\n\nSystem.out.println(\"Hello World\");\n\n}\n\nelse\n\n{\n\nSystem.out.println(\"Error\")\n\n}",
+      "answer1": "Hello World",
+      "answer2": "Error\nHello World",
+      "answer3": "Error",
+      "answer4": "Hello World\nError",
+      "correct": "Error"
 
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "Selection structure consist of",
+      "answer1": "if/else statements",
+      "answer2": "do/while statements",
+      "answer3": "for statement",
+      "answer4": "while statement",
+      "correct": "if/else statements"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "Which of the following is NOT the Selection Control Structure?",
+      "answer1": "if",
+      "answer2": "if/else",
+      "answer3": "for",
+      "answer4": "switch",
+      "correct": "for"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "Consider\n\nthe following Java program :\n\npublic class Compute {\n\npublic static void main (string args [ ])\n\n{\n\nint result, x ;\n\nx = 1 ;\n\nresult = 0;\n\nwhile (x < = 10) {\n\nif (x%2 == 0) result + = x ;\n\n+ + x ;\n\n}\n\nSystem.out.println(result) ;\n\n}\n\n}\n\nWhich of the following will be the output of the above program?",
+      "answer1": "55",
+      "answer2": "30",
+      "answer3": "25",
+      "answer4": "35",
+      "correct": "30"
+    },
+    {
+      "problem": "Which is not an operator?",
+      "answer1": "Pointer",
+      "answer2": "special",
+      "answer3": "arithmetic",
+      "answer4": "special",
+      "correct": "Pointer"
+    },
+    {
+      "problem": "What\n\nwill be printed as the output of the following program?\n\npublic class testInCr\n\n{\n\npublic static void main(String args[])\n\n{\n\nint i = 0;\n\ni = i++ + i;\n\nSystem.out.println(“I = ” +i);\n\n}\n\n}",
+      "answer1": "I = 0",
+      "answer2": "I = 1",
+      "answer3": "I = 2",
+      "answer4": "Error",
+      "correct": "I = 1"
+    },
+    {
+      "problem": "Which is one of the relational operators?",
+      "answer1": "<",
+      "answer2": ">",
+      "answer3": "==",
+      "answer4": "All of the above",
+      "correct": "All of the above"
+    },
+    {
+      "problem": "What is the type and value of the following expression? (Notice the integer division)\n-4 + 1/2 + 2*-3 + 5.0",
+      "answer1": "int -5",
+      "answer2": "double -4.5",
+      "answer3": "int -4",
+      "answer4": "double -5.0",
+      "correct": "double -5.0"
+    },
+    {
+      "problem": "Consider the following Java program :\nclass IfStatement{\npublic static void main(String args[])\n{\nint a=2, b=3;\nif (a==3)\nif (b==3)\nSystem.out.println(“===============”);\nelse\nSystem.out.println(“#################”);\nSystem.out.println(“&&&&&&&&&&&”);\n}\n}\nWhich of the following will the output be?",
+      "answer1": "===============",
+      "answer2": "#################\n&&&&&&&&&",
+      "answer3": "&&&&&&&&&&&",
+      "answer4": "===============\n#################",
+      "correct": "&&&&&&&&&&&"
+    },
+    {
+      "problem": "Boolean values are: ",
+      "answer1": "True / False",
+      "answer2": "Yes / No",
+      "answer3": "Right / Wrong",
+      "answer4": "Yes / False",
+      "correct": "True / False"
     }
   ]
 }

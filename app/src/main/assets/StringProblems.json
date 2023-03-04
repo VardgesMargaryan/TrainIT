@@ -1,37 +1,85 @@
 {
   "strings": [
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "String word = \"A few good men\";\nWhat is word.length()?",
+      "answer1": "14",
+      "answer2": "13",
+      "answer3": "15",
+      "answer4": "16",
+      "correct": "14"
 
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "String word = \"A few good men\";\nWhat is word.charAt(7) ?",
+      "answer1": "o",
+      "answer2": "7",
+      "answer3": "g",
+      "answer4": "good men",
+      "correct": "o"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "String word = \"A few good men\";\nWhat is word.indexOf(“f”)?",
+      "answer1": "0",
+      "answer2": "2",
+      "answer3": "1",
+      "answer4": "-1",
+      "correct": "2"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "String word = \"A few good men\";\nWhat is word.substring(3, 7) ?",
+      "answer1": "ew g",
+      "answer2": "ew go",
+      "answer3": "few",
+      "answer4": "few[space]",
+      "correct": "ew g"
+    },
+    {
+      "problem": "Which of the following is NOT a primitive data type?",
+      "answer1": "double",
+      "answer2": "float",
+      "answer3": "boolean",
+      "answer4": "String",
+      "correct": "String"
+    },
+    {
+      "problem": "What would be output by the following program segment?\nString n1 = \"Samuel\";\nString n2 = \"Samantha\";\nSystem.out.print(n1.compareTo(n2);",
+      "answer1": "false",
+      "answer2": "true",
+      "answer3": "a negative number, -20",
+      "answer4": "a positive number, 20",
+      "correct": "a positive number, 20"
+    },
+    {
+      "problem": "String firstName = \"John \";\nString lastName = \"Doe\";\nSystem.out.println(firstName.concat(lastName));\nGuess the output.",
+      "answer1": "John.concat(Doe)",
+      "answer2": "JohnDoe",
+      "answer3": "\"John Doe\"",
+      "answer4": "JOHN DOE",
+      "correct": "John Doe"
+    },
+    {
+      "problem": "String x = \"10\";\nString y = \"20\";\nString z = x + y;\nGuess the output.",
+      "answer1": "1020",
+      "answer2": "30",
+      "answer3": "10 20",
+      "answer4": "\"10 20\"",
+      "correct": "1020"
+    },
+    {
+      "problem": "String txt = \"Hello World\";\nSystem.out.println(txt.toUpperCase());\nChoose the correct output.",
+      "answer1": "Hello World",
+      "answer2": "HELLO WORLD",
+      "answer3": "\"Hello world\"",
+      "answer4": "\"HELLO WORLD\"",
+      "correct": "HELLO WORLD"
+    },
+    {
+      "problem": "Which of these class is superclass of String and StringBuffer class?",
+      "answer1": "java.util",
+      "answer2": "java.lang",
+      "answer3": "ArrayList",
+      "answer4": "None of the above",
+      "correct": "java.lang"
     }
   ]
 }

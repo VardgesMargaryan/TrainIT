@@ -1,37 +1,85 @@
 {
   "cycles": [
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "A while loop carries on as long as...",
+      "answer1": "The condition in the brackets is true",
+      "answer2": "i < 10",
+      "answer3": "The condition in the brackets is false",
+      "answer4": "the for loop has not ended",
+      "correct": "The condition in the brackets is true"
 
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "A while loop has the following format:",
+      "answer1": "while (condition){...}",
+      "answer2": "while{...}",
+      "answer3": "continue while (condition){...}",
+      "answer4": "while [condition][...]",
+      "correct": "while (condition){...}"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "OUTPUT?\nint i = 1;\nwhile (i < 5) {\nSystem.out.println(\"Hello\");\ni++;\n}",
+      "answer1": "HelloHello",
+      "answer2": "Hello(new line)Hello(new line)Hello(new line)Hello",
+      "answer3": "HelloHelloHello",
+      "answer4": "Hello",
+      "correct": "Hello(new line)Hello(new line)Hello(new line)Hello"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "What will the following program segment display?\nfor(int a = 2; a <= 10; a += 3)\nSystem.out.print(a+””);",
+      "answer1": "2 5",
+      "answer2": "2 5 8 11",
+      "answer3": "2 5 8",
+      "answer4": "2",
+      "correct": "2 5"
+    },
+    {
+      "problem": "How many times will the following code print \"Welcome to Java\"?\nint count = 0;\nwhile (count < 10) {\n System.out.println(\"Welcome to Java\");\n count++;\n}",
+      "answer1": "8",
+      "answer2": "0",
+      "answer3": "10",
+      "answer4": "9",
+      "correct": "10"
+    },
+    {
+      "problem": "Which loop loops a set number of times?",
+      "answer1": "for",
+      "answer2": "while",
+      "answer3": "do while",
+      "answer4": "infinite",
+      "correct": "for"
+    },
+    {
+      "problem": "What is the output of the following code?\nint x = 0;\nwhile (x < 4) {\n x = x + 1;\n}\nSystem.out.println(\"x is \" + x);",
+      "answer1": "0",
+      "answer2": "3",
+      "answer3": "1",
+      "answer4": "4",
+      "correct": "4"
+    },
+    {
+      "problem": "Which of the following is a type of loop in Java?",
+      "answer1": "loop",
+      "answer2": "while",
+      "answer3": "i",
+      "answer4": "iteration",
+      "correct": "while"
+    },
+    {
+      "problem": "What will the following loop print?\nint i = 0;\nwhile (i>0)\n{ System.out.println(i); }",
+      "answer1": "Infinite loop",
+      "answer2": "0",
+      "answer3": "Nothing",
+      "answer4": "012345678910",
+      "correct": "Nothing"
+    },
+    {
+      "problem": "Which of the following includes the correct syntax for a for loop?",
+      "answer1": "for(int i = 0, i<10, i++)",
+      "answer2": "for(int i =0, run = 10)",
+      "answer3": "for(int i = 0; run = 10)",
+      "answer4": "for(int i = 0; i < 10; i++)",
+      "correct": "for(int i = 0; i < 10; i++)"
     }
   ]
 }

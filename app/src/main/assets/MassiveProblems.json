@@ -1,37 +1,85 @@
 {
   "massives": [
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "The first value of an array called quizzes can be accessed with which of the following statements?",
+      "answer1": "quizzes[1] = 100",
+      "answer2": "quizzes[zero] = 100",
+      "answer3": "quizzes[0] = 100",
+      "answer4": "quizzes[one] = 100",
+      "correct": "quizzes[0] = 100"
 
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "Which of the following statements outputs the fifth value in the quizzes array?",
+      "answer1": "System.out.println(quizzes[5])",
+      "answer2": "quizzes[5]",
+      "answer3": "quizzes[4]",
+      "answer4": "System.out.println(quizzes[4])",
+      "correct": "System.out.println(quizzes[4])"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "Which of the following is NOT the Selection Control Structure?",
+      "answer1": "if",
+      "answer2": "if/else",
+      "answer3": "for",
+      "answer4": "switch",
+      "correct": "for"
     },
     {
-      "problem": "problem",
-      "answer1": "answer1",
-      "answer2": "answer2",
-      "answer3": "answer3",
-      "answer4": "answer4",
-      "correct": "answer1"
+      "problem": "What is the length of the following array: byte[] data = { 12, 34, 9, 0, -62, 88 }",
+      "answer1": "1",
+      "answer2": "6",
+      "answer3": "5",
+      "answer4": "12",
+      "correct": "6"
+    },
+    {
+      "problem": "Which of the following is FALSE about arrays on Java",
+      "answer1": "A java array is always an object",
+      "answer2": "Arrays in Java are always allocated on heap",
+      "answer3": "Length of array can be changed after creation of array",
+      "answer4": "Arrays in Java can contain different types of variables",
+      "correct": "Length of array can be changed after creation of array"
+    },
+    {
+      "problem": "class Demo1\n{\npublic static void main(String args[])\n{\nint i[] = new int[10];\nSystem.out.println(i[10]);\n}\n}",
+      "answer1": "0",
+      "answer2": "Garbage Value",
+      "answer3": "Error",
+      "answer4": "Out-of-bond exception",
+      "correct": "Out-of-bond exception"
+    },
+    {
+      "problem": "int [] nums = {2, 3, 5, 8, 9, 11};\nHow would you access the fourth element in nums?",
+      "answer1": "nums[4]",
+      "answer2": "nums(4)",
+      "answer3": "nums[3]",
+      "answer4": "nums(3)",
+      "correct": "nums[3]"
+    },
+    {
+      "problem": "What are the legal indexes for the array ar, given the following declaration:\nint[] ar = {2, 4, 6, 8 }",
+      "answer1": "0, 1, 2, 3",
+      "answer2": "1, 2, 3, 4",
+      "answer3": "2, 4, 6, 8",
+      "answer4": "0, 2, 4, 6",
+      "correct": "0, 1, 2, 3"
+    },
+    {
+      "problem": "for(int i=0; i<10; i++)\nnumbers[i] = 2 * i + 1;\nWhich index of the array holds the value of 5?",
+      "answer1": "1",
+      "answer2": "3",
+      "answer3": "2",
+      "answer4": "4",
+      "correct": "2"
+    },
+    {
+      "problem": "What is the error in the following code fragment?\ndouble [] average = new double [20];\naverage[20] = 15.25;",
+      "answer1": "A cast is required",
+      "answer2": "data not initialized",
+      "answer3": "A two-dimensional array is required",
+      "answer4": "Array Out-of-bounds error",
+      "correct": "Array Out-of-bounds error"
     }
   ]
 }
