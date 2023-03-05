@@ -1,5 +1,6 @@
 package com.example.trainit;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,45 +9,51 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
+import com.google.firebase.storage.UploadTask;
 
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    TextView logOut, email, changeLanguage;
+    TextView logOut, email, changeLanguage, aboutUs;
 
-    CircleImageView profileImageView;
-    Button changeProfileImage, saveBtn;
+    private CircleImageView profileImageView;
+
+    private FirebaseStorage storage;
+
+    private StorageReference storageReference;
+
+    public Uri imageUri;
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
-    private FirebaseAuth mAuth;
 
-    DatabaseReference databaseReference;
-    private Uri imageUri;
-    private String myUri = "";
-    private StorageTask uploadTask;
-    private StorageReference storageProfilePicsRef;
+    private FirebaseAuth mAuth;
 
 
     @SuppressLint("MissingInflatedId")
@@ -59,13 +66,13 @@ public class ProfileActivity extends AppCompatActivity {
         logOut = findViewById(R.id.logout_txt);
         email = findViewById(R.id.email_show_tv);
         changeLanguage = findViewById(R.id.change_language_tv);
-        changeProfileImage = findViewById(R.id.change_pfp_btn);
-        saveBtn = findViewById(R.id.save_btn);
         profileImageView = findViewById(R.id.profile_icon);
+        aboutUs = findViewById(R.id.about_us_tv);
 
         mAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("User");
-        storageProfilePicsRef = FirebaseStorage.getInstance().getReference().child("Profile Picture");
+        storage = FirebaseStorage.getInstance();
+        storageReference = storage.getReference();
+
 
 
 
@@ -83,6 +90,15 @@ public class ProfileActivity extends AppCompatActivity {
 
         }
 
+
+        aboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, AboutUsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         changeLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,6 +115,33 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+//        profileImageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                choosePicture();
+//            }
+//        });
+//
+//
+//    }
+//
+//    private void choosePicture() {
+//        Intent intent = new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        startActivityForResult(intent, 1);
+//    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if(requestCode == 1 && resultCode == RESULT_OK && data != null && data.getData() != null){
+//            imageUri = data.getData();
+//            profileImageView.setImageURI(imageUri);
+//
+//
+//
+//        }
     }
 
     void signOut() {

@@ -26,7 +26,7 @@
       "correct": "for"
     },
     {
-      "problem": "Consider\n\nthe following Java program :\n\npublic class Compute {\n\npublic static void main (string args [ ])\n\n{\n\nint result, x ;\n\nx = 1 ;\n\nresult = 0;\n\nwhile (x < = 10) {\n\nif (x%2 == 0) result + = x ;\n\n+ + x ;\n\n}\n\nSystem.out.println(result) ;\n\n}\n\n}\n\nWhich of the following will be the output of the above program?",
+      "problem": "Consider the following Java program :\n\npublic class Compute {\n\npublic static void main (string args [ ])\n\n{\nint result, x ;\nx = 1 ;\n\nresult = 0;\n\nwhile (x < = 10) {\nif (x%2 == 0) result + = x ;\n\n+ + x ;\n}\nSystem.out.println(result) ;\n}\n}\n\nWhich of the following will be the output of the above program?",
       "answer1": "55",
       "answer2": "30",
       "answer3": "25",

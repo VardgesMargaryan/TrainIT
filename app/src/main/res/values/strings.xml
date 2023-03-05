@@ -21,5 +21,6 @@
     <string name="profile">Profile</string>
     <string name="change_pfp_icon">Change profile picture</string>
     <string name="save_btn">Save</string>
+    <string name="return_str">Return</string>
 
 </resources>

@@ -22,4 +22,5 @@
     <string name="profile">Պրոֆիլ</string>
     <string name="change_pfp_icon">Փոխել նկարը</string>
     <string name="save_btn">Պահպանել</string>
+    <string name="return_str">Վերադարձ</string>
 </resources>

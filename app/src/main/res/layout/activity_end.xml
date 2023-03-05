@@ -5,12 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/powder_white"
     tools:context=".EndActivity">
 
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/holtwood_one_sc"
         android:text=""/>
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/orange_buttons"
+        android:text="@string/return_str"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:textColor="@color/powder_white"
+        android:layout_marginHorizontal="50dp"/>
 
 </LinearLayout>

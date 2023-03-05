@@ -28,8 +28,6 @@ public class StartButtonActivity extends AppCompatActivity {
         ImageView menu = findViewById(R.id.menu_icon);
 
 
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-
 
 
 
