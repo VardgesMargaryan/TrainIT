@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/layouts"
+    android:background="@drawable/img_2"
     tools:context=".LoginActivity">
     <ImageView
         android:id="@+id/log_in_icon"
@@ -12,7 +12,7 @@
         android:layout_height="128sp"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="32sp"
-        android:background="@drawable/log_in_icon"/>
+        android:background="@drawable/login"/>
 
     <LinearLayout
         android:id="@+id/greeting_layout"
@@ -25,15 +25,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hello"
-            android:fontFamily="@font/holtwood_one_sc"
-            android:textColor="@color/powder_white"
+            android:fontFamily="@font/orbitron"
+            android:textColor="@color/orange_main"
+            android:textStyle="bold"
             android:textSize="20sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_welcome"
-            android:fontFamily="@font/holtwood_one_sc"
-            android:textColor="@color/powder_white"
+            android:fontFamily="@font/orbitron"
+            android:textStyle="bold"
+            android:textColor="@color/orange_main"
             android:textSize="20sp"/>
 
 
@@ -71,17 +73,17 @@
             />
 
         <Button
-            android:layout_width="match_parent"
             android:id="@+id/log_in_btn"
+            android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:text="@string/login"
-            android:backgroundTint="@color/prussian_blue"
-            android:background="@drawable/rounded_corners"
-            android:textColor="@color/powder_white"
-            android:fontFamily="@font/holtwood_one_sc"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="12dp"
-            android:textSize="16sp"
-            />
+            android:background="@drawable/img"
+            android:fontFamily="@font/orbitron"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textColor="@color/orange_main"
+            android:textSize="16sp" />
 
         <ProgressBar
             android:layout_width="24dp"
@@ -96,6 +98,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/account_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/form_layout"
@@ -107,12 +110,12 @@
             android:id="@+id/account_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/powder_white"
+            android:textColor="@color/orange_main"
             android:text="@string/login_to_create_account"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/powder_white"
+            android:textColor="@color/orange_main"
             android:textStyle="bold"
             android:id="@+id/create_account_text_view_btn"
             android:text="@string/sign_up"/>
@@ -122,19 +125,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/form_layout"
+        android:layout_below="@id/account_layout"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/google_btn"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/img"
-            android:gravity="center"
+            android:src="@drawable/google_btn"
+            android:layout_marginBottom="50dp"
             />
 
 

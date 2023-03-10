@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/powder_white"
+    android:background="@drawable/img_2"
     tools:context=".ProfileActivity">
 
     <TextView
@@ -14,8 +14,8 @@
         android:layout_marginTop="10dp"
         android:text="@string/profile"
         android:textAlignment="center"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:textColor="@color/tart_orange"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/orange_main"
         android:textSize="25sp"/>
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_icon"
@@ -37,15 +37,31 @@
         android:background="@drawable/white_background"
         android:layout_marginHorizontal="20dp"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/email_tv"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/email_icon_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/email"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="5dp"
-            android:textStyle="bold"
-            android:textColor="@color/tart_orange"/>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/email"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
         <TextView
             android:id="@+id/email_show_tv"
             android:layout_width="wrap_content"
@@ -73,7 +89,7 @@
                 android:id="@+id/change_language_icon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:background="@drawable/change_language"
+                android:background="@drawable/language"
                 android:layout_marginVertical="10dp"
                 android:layout_marginStart="10dp"/>
             <TextView
@@ -85,7 +101,7 @@
                 android:layout_marginVertical="10dp"
                 android:layout_marginHorizontal="5dp"
                 android:textStyle="bold"
-                android:textColor="@color/tart_orange"/>
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -96,7 +112,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:background="@drawable/about_us"
+                android:background="@drawable/info"
                 android:layout_marginVertical="10dp"
                 android:layout_marginStart="10dp"/>
             <TextView
@@ -107,7 +123,7 @@
                 android:layout_marginVertical="10dp"
                 android:layout_marginHorizontal="5dp"
                 android:textStyle="bold"
-                android:textColor="@color/tart_orange"/>
+                android:textColor="@color/black"/>
         </LinearLayout>
 
 
@@ -124,12 +140,12 @@
         android:layout_marginBottom="20dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="15dp"
-            android:background="@drawable/log_out_icon"/>
+            android:background="@drawable/exit"/>
         <TextView
             android:id="@+id/logout_txt"
             android:layout_width="wrap_content"
@@ -137,7 +153,7 @@
             android:layout_marginVertical="10dp"
             android:textStyle="bold"
             android:gravity="center"
-            android:textColor="@color/tart_orange"
+            android:textColor="@color/black"
             android:text="@string/logout"/>
     </LinearLayout>
 
