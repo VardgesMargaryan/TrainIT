@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StartButtonActivity"
-    android:background="@drawable/img_2">
+    android:background="@drawable/main_background">
     <include layout="@layout/toolbar"/>
 
 
@@ -24,8 +24,8 @@
         android:textSize="30sp"/>
     <Button
         android:id="@+id/conditional_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/condition"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/cycles_btn"
@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/cycles_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/cycle"
         app:layout_constraintLeft_toRightOf="@id/conditional_btn"
         app:layout_constraintTop_toTopOf="parent"
@@ -73,14 +73,15 @@
         app:layout_constraintLeft_toRightOf="@id/conditional_txt" />
     <Button
         android:id="@+id/massives_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/array"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/conditional_txt"
         app:layout_constraintBottom_toBottomOf="@id/massives_txt"
         app:layout_constraintRight_toLeftOf="@id/strings_btn"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="200dp"/>
     <TextView
         android:id="@+id/massives_txt"
@@ -97,14 +98,15 @@
         />
     <Button
         android:id="@+id/strings_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/string"
         app:layout_constraintLeft_toRightOf="@id/massives_btn"
         app:layout_constraintTop_toBottomOf="@id/cycles_txt"
         app:layout_constraintBottom_toBottomOf="@id/strings_txt"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="200dp"/>
     <TextView
         android:id="@+id/strings_txt"
@@ -119,6 +121,42 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@id/massives_txt"
         />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/quiz_tv"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/quiz_tv"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="@font/orbitron"
+            android:textColor="@color/orange_main"
+            android:layout_marginStart="70dp"
+            android:background="@drawable/img_1" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toRightOf="@id/quiz_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/img_2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_2"
+    android:background="@drawable/main_background"
     tools:context=".LoginActivity">
     <ImageView
         android:id="@+id/log_in_icon"
@@ -21,22 +21,46 @@
         android:orientation="vertical"
         android:layout_margin="20sp"
         android:layout_below="@id/log_in_icon">
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hello"
-            android:fontFamily="@font/orbitron"
-            android:textColor="@color/orange_main"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-        <TextView
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/greeting"
+                android:layout_marginHorizontal="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:fontFamily="@font/orbitron"
+                android:textColor="@color/orange_main"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login_welcome"
-            android:fontFamily="@font/orbitron"
-            android:textStyle="bold"
-            android:textColor="@color/orange_main"
-            android:textSize="20sp"/>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/welcome"
+                android:layout_marginHorizontal="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_welcome"
+                android:fontFamily="@font/orbitron"
+                android:textStyle="bold"
+                android:textColor="@color/orange_main"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>
@@ -51,16 +75,19 @@
         android:orientation="vertical">
 
         <EditText
+            android:drawableStart="@drawable/email_icon"
+            android:drawablePadding="5dp"
             android:id="@+id/email_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="@string/email"
             android:textSize="20sp"
-            android:textColor="@color/powder_white"
             android:background="@drawable/rounded_corners"
             android:padding="16dp"/>
         <EditText
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password_edit_text"
