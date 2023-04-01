@@ -23,4 +23,5 @@
     <string name="change_pfp_icon">Сменить фотку профиля</string>
     <string name="save_btn">Сохранить</string>
     <string name="return_str">Назад</string>
+    <string name="quiz_tv">Опросы</string>
 </resources>

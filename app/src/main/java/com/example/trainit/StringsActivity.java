@@ -1,5 +1,6 @@
 package com.example.trainit;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -26,6 +27,7 @@ public class StringsActivity extends AppCompatActivity {
     Button btnAnswer1, btnAnswer2, btnAnswer3, btnAnswer4;
 
     List<Problem> problemItems;
+
     int curProblem = 0;
 
     int correct = 0; int wrong = 0;
@@ -49,6 +51,7 @@ public class StringsActivity extends AppCompatActivity {
         Collections.shuffle(problemItems);
 
         setProblemOnScreen(curProblem);
+
 
         btnAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override

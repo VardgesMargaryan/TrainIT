@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,13 +46,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private CircleImageView profileImageView;
 
-    private FirebaseStorage storage;
-
-    private StorageReference storageReference;
-
-    public Uri imageUri;
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
+    ImageView returnBtn;
 
     private FirebaseAuth mAuth;
 
@@ -68,26 +63,15 @@ public class ProfileActivity extends AppCompatActivity {
         changeLanguage = findViewById(R.id.change_language_tv);
         profileImageView = findViewById(R.id.profile_icon);
         aboutUs = findViewById(R.id.about_us_tv);
+        returnBtn = findViewById(R.id.return_imgv);
 
         mAuth = FirebaseAuth.getInstance();
-        storage = FirebaseStorage.getInstance();
-        storageReference = storage.getReference();
 
 
 
-
-
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if(acct != null){
-            String personEmail = acct.getEmail();
-            email.setText(personEmail);
-        }else{
+        if(mAuth.getCurrentUser() != null){
             String emailShow = mAuth.getCurrentUser().getEmail();
             email.setText(emailShow);
-
         }
 
 
@@ -111,47 +95,20 @@ public class ProfileActivity extends AppCompatActivity {
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signOut();
-            }
-        });
-
-//        profileImageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                choosePicture();
-//            }
-//        });
-//
-//
-//    }
-//
-//    private void choosePicture() {
-//        Intent intent = new Intent();
-//        intent.setType("image/*");
-//        intent.setAction(Intent.ACTION_GET_CONTENT);
-//        startActivityForResult(intent, 1);
-//    }
-//
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if(requestCode == 1 && resultCode == RESULT_OK && data != null && data.getData() != null){
-//            imageUri = data.getData();
-//            profileImageView.setImageURI(imageUri);
-//
-//
-//
-//        }
-    }
-
-    void signOut() {
-        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(Task<Void> task) {
-                finish();
+                mAuth.signOut();
                 startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
             }
         });
+
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, StartButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 

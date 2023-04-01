@@ -158,11 +158,6 @@ public class ConditionalsActivity extends AppCompatActivity {
         });
 
 
-       // Gson gson = new Gson();
-
-
-      //  Type listType = new TypeToken<ArrayList<Problem>>(){}.getType();
-       // ArrayList<Problem> problem = gson.fromJson(probJSON, listType);
 
 
         

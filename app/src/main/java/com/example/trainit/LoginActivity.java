@@ -31,9 +31,6 @@ public class LoginActivity extends AppCompatActivity {
     Button logInBtn;
     ProgressBar progressBar;
     TextView createAccountBtnTextView;
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
-    ImageView googleBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,37 +40,18 @@ public class LoginActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.password_edit_text);
         logInBtn = findViewById(R.id.log_in_btn);
         progressBar = findViewById(R.id.progress_bar);
-        googleBtn = findViewById(R.id.google_btn);
         createAccountBtnTextView = findViewById(R.id.create_account_text_view_btn);
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
 
         logInBtn.setOnClickListener((v)-> loginUser() );
         createAccountBtnTextView.setOnClickListener((v)->startActivity(new Intent(LoginActivity.this,CreateAccountActivity.class)) );
 
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if(acct!=null){
-            navigateToStartActivity();
-        }
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
 
 
-        googleBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signIn();
-            }
-
-        });
 
 
 
-    }
-
-    void signIn(){
-        Intent signIntent = gsc.getSignInIntent();
-        startActivityForResult(signIntent, 1000);
     }
 
     @Override
@@ -120,16 +98,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 changeInProgress(false);
                 if(task.isSuccessful()){
-                    //Login is success
-                    if(firebaseAuth.getCurrentUser().isEmailVerified()){
-                        //Go to StartActivity
+                    if(firebaseAuth.getCurrentUser().isEmailVerified()) {
                         startActivity(new Intent(LoginActivity.this, StartButtonActivity.class));
                         finish();
                     }else{
                         Toast.makeText(LoginActivity.this,"Email not verified, Please verify your email.", Toast.LENGTH_SHORT).show();
                     }
 
-                }else{
+            }else{
                     //Login failed
                     Toast.makeText(LoginActivity.this,task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                 }

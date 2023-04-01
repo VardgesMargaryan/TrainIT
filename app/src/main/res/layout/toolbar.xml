@@ -8,9 +8,7 @@
         android:id="@+id/menu_icon"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:src="@drawable/menu_icon"
-
-        />
+        android:src="@drawable/menu_icon" />
 
 </RelativeLayout>
 

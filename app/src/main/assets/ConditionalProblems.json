@@ -1,12 +1,12 @@
 {
   "conditionals": [
     {
-      "problem": "PREDICT THE OUTPUT:\n\nint x = 60;\n\nint y = 90;\n\nif (y%x == 0 && y-x==30)\n\n{\n\nSystem.out.println(\"Hello World\");\n\n}\n\nelse\n\n{\n\nSystem.out.println(\"Error\")\n\n}",
-      "answer1": "Hello World",
-      "answer2": "Error\nHello World",
-      "answer3": "Error",
-      "answer4": "Hello World\nError",
-      "correct": "Error"
+      "problem": "Which of the following is the relational operator for not equal to?",
+      "answer1": ">=",
+      "answer2": "<=",
+      "answer3": "<>",
+      "answer4": "!=",
+      "correct": "!="
 
     },
     {
@@ -26,12 +26,12 @@
       "correct": "for"
     },
     {
-      "problem": "Consider the following Java program :\n\npublic class Compute {\n\npublic static void main (string args [ ])\n\n{\nint result, x ;\nx = 1 ;\n\nresult = 0;\n\nwhile (x < = 10) {\nif (x%2 == 0) result + = x ;\n\n+ + x ;\n}\nSystem.out.println(result) ;\n}\n}\n\nWhich of the following will be the output of the above program?",
-      "answer1": "55",
-      "answer2": "30",
-      "answer3": "25",
-      "answer4": "35",
-      "correct": "30"
+      "problem": "How many choices are possible when using a single if-else statement?",
+      "answer1": "1",
+      "answer2": "3",
+      "answer3": "2",
+      "answer4": "4",
+      "correct": "2"
     },
     {
       "problem": "Which is not an operator?",
@@ -42,12 +42,12 @@
       "correct": "Pointer"
     },
     {
-      "problem": "What\n\nwill be printed as the output of the following program?\n\npublic class testInCr\n\n{\n\npublic static void main(String args[])\n\n{\n\nint i = 0;\n\ni = i++ + i;\n\nSystem.out.println(“I = ” +i);\n\n}\n\n}",
-      "answer1": "I = 0",
-      "answer2": "I = 1",
-      "answer3": "I = 2",
-      "answer4": "Error",
-      "correct": "I = 1"
+      "problem": "Which of the statement test only for equality?",
+      "answer1": "if",
+      "answer2": "switch",
+      "answer3": "if & switch",
+      "answer4": "None of the above",
+      "correct": "switch"
     },
     {
       "problem": "Which is one of the relational operators?",
@@ -66,12 +66,12 @@
       "correct": "double -5.0"
     },
     {
-      "problem": "Consider the following Java program :\nclass IfStatement{\npublic static void main(String args[])\n{\nint a=2, b=3;\nif (a==3)\nif (b==3)\nSystem.out.println(“===============”);\nelse\nSystem.out.println(“#################”);\nSystem.out.println(“&&&&&&&&&&&”);\n}\n}\nWhich of the following will the output be?",
-      "answer1": "===============",
-      "answer2": "#################\n&&&&&&&&&",
-      "answer3": "&&&&&&&&&&&",
-      "answer4": "===============\n#################",
-      "correct": "&&&&&&&&&&&"
+      "problem": "Which expression below would determine if a number was odd?",
+      "answer1": "number % 2 == 0",
+      "answer2": "number / 2 == 0",
+      "answer3": "number % 2 == 1",
+      "answer4": "number % 10 == number",
+      "correct": "number % 2 == 1"
     },
     {
       "problem": "Boolean values are: ",

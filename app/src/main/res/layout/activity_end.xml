@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/powder_white"
+    android:background="@drawable/background_gradient"
     tools:context=".EndActivity">
 
     <TextView
@@ -14,18 +14,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text=""/>
+        android:textSize="50dp"
+        android:textColor="@color/orange_main"
+        android:fontFamily="@font/orbitron" />
 
     <Button
         android:id="@+id/return_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@drawable/orange_buttons"
+        android:background="@drawable/img"
         android:text="@string/return_str"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:textColor="@color/powder_white"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/orange_main"
         android:layout_marginHorizontal="50dp"/>
 
 </LinearLayout>
